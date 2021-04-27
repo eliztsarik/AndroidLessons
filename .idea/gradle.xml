@@ -7,8 +7,6 @@
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle/gradle-6.8" />
-        <option name="gradleJvm" value="1.8 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -29,6 +27,8 @@
             <option value="$PROJECT_DIR$/p0151contextmenu" />
             <option value="$PROJECT_DIR$/p0161dynamiclayout" />
             <option value="$PROJECT_DIR$/p0171dynamiclayout2" />
+            <option value="$PROJECT_DIR$/p0181dynamiclayout3" />
+            <option value="$PROJECT_DIR$/p0191simplecalculator" />
             <option value="$PROJECT_DIR$/p1801constraintlayoutintro" />
           </set>
         </option>
