@@ -1,3 +1,4 @@
+include ':p0171dynamiclayout2'
 include ':p0161dynamiclayout'
 include ':p0151contextmenu'
 include ':p0141menuadv'
