@@ -5,10 +5,10 @@ plugins {
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "30.0.3"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.eliztsarik.p0181dynamiclayout3"
+        applicationId "com.eliztsarik.p0201simpleanimation"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1

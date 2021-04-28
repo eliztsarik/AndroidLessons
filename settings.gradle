@@ -1,3 +1,4 @@
+include ':p0201simpleanimation'
 include ':p0191simplecalculator'
 include ':p0181dynamiclayout3'
 include ':p0171dynamiclayout2'
