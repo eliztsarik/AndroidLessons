@@ -39,11 +39,13 @@
             <option value="$PROJECT_DIR$/p0291simpleactivityresult" />
             <option value="$PROJECT_DIR$/p0301activityresult" />
             <option value="$PROJECT_DIR$/p0311simpleintents" />
+            <option value="$PROJECT_DIR$/p0321simplebrowser" />
+            <option value="$PROJECT_DIR$/p0331sharedpreferences" />
+            <option value="$PROJECT_DIR$/p0341simplesqlite" />
             <option value="$PROJECT_DIR$/p1801constraintlayoutintro" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

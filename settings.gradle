@@ -1,3 +1,4 @@
+include ':p0321simplebrowser'
 include ':p0311simpleintents'
 include ':p0301activityresult'
 include ':p0291simpleactivityresult'
@@ -29,3 +30,5 @@ include ':p0041basciviews'
 include ':p0031firstproject'
 include ':app'
 rootProject.name = "Android Lessons"
+include ':p0331sharedpreferences'
+include ':p0341simplesqlite'
