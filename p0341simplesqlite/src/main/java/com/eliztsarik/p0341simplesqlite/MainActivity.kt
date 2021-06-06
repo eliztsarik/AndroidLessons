@@ -4,11 +4,12 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 const val LOG_TAG = "myLogs"
 
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var etName: EditText
     lateinit var etEmail: EditText
+    lateinit var etID: EditText
 
     lateinit var dbHelper: DBHelper
 
@@ -32,10 +34,48 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnRead)
             .setOnClickListener { onRead() }
 
+        findViewById<Button>(R.id.btnUpd)
+            .setOnClickListener { onUpdate(it) }
+
+        findViewById<Button>(R.id.btnDel)
+            .setOnClickListener { onDelete(it) }
+
         etName = findViewById(R.id.etName)
         etEmail = findViewById(R.id.etEmail)
+        etID = findViewById(R.id.etID)
 
         dbHelper = DBHelper(this)
+    }
+
+    private fun onDelete(view: View) {
+        val id = etID.text.toString()
+        if (id == "") {
+            return
+        }
+        val db = dbHelper.writableDatabase
+        Log.d(LOG_TAG, "--- Delete from mytable: ---")
+        val delCount = db.delete("mytable", "id = $id", null)
+        Log.d(LOG_TAG, "deleted rows count = $delCount")
+    }
+
+    private fun onUpdate(view: View) {
+        val id = etID.text.toString()
+        if (id == "") {
+            return
+        }
+        Log.d(LOG_TAG, "--- Update mytable: ---")
+        val cv = ContentValues()
+        val db = dbHelper.writableDatabase
+
+        val name = etName.text.toString()
+        val email = etEmail.text.toString()
+
+
+        cv.put("name", name)
+        cv.put("email", email)
+
+        val updCount = db.update("mytable", cv, "id = ?", arrayOf(id))
+        Log.d(LOG_TAG, "updated rows count = $updCount");
     }
 
     private fun onAdd() {

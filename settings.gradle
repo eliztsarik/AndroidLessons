@@ -32,3 +32,4 @@ include ':app'
 rootProject.name = "Android Lessons"
 include ':p0331sharedpreferences'
 include ':p0341simplesqlite'
+include ':p0361sqlitequery'
