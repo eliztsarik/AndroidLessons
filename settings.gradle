@@ -33,3 +33,5 @@ rootProject.name = "Android Lessons"
 include ':p0331sharedpreferences'
 include ':p0341simplesqlite'
 include ':p0361sqlitequery'
+include ':p0371sqliteinnerjoin'
+include ':p0381sqlitetransaction'
